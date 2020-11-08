@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d865f5fc1d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="oras()">
+    <div class="min">
+      <header class="head">
+        <h1>Todo List</h1>
+      </header>
+      <!-- main section -->
+      <main>
+        <section class="container">
+          <div class="con_search">
+            <form class="form" action="index.php" method="">
+              <input
+                class="search_input"
+                name="add_task"
+                placeholder="ADD TASK HERE..."
+                type="text"
+                id="add_task"
+                required
+              />
+              <button class="btn_submit" type="submit">SAVE</button>
+            </form>
+          </div>
+          <div class="con_list">
+            <ul id="item-list"></ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="logo">TECHIES</div>
+        <div class="clock">
+          <div class="time" onload="oras()"></div>
+          <div class="day">SATURDAY</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+<script src="main.js"></script>
